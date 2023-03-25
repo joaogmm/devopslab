@@ -23,15 +23,12 @@ jobs:
         run:  pip install flask
         run:  pip install flask flask-wtf
 
-      - name: Coverage
-        run:  coverage run -m unittest
-
       - name: Unit Test
         run: python -m unittest -v test
 
-      - name: Run coverage
-        run: py.test test.py --cov=test.py
-      
+      - name: Coverage
+        run:  coverage run -m unittest
+
       - name: Install tox and any other packages
         run: pip install tox
 
