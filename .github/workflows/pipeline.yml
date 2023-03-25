@@ -29,10 +29,7 @@ jobs:
         run:  pip install pytest-cov
 
       - name: Run coverage
-      - run: py.test test.py --cov=sample.py
-
-      - name: Unit Test
-        run: python -m unittest -v test
+        run: py.test test.py --cov=sample.py
       
       - name: Install tox and any other packages
         run: pip install tox
