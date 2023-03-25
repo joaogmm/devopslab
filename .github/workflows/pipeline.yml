@@ -21,12 +21,13 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask
-
-      - name: Install Requirements
         run:  pip install flask flask-wtf
 
-      - name: Install Requirements
-        run:  pip install pytest-cov
+      - name: Coverage
+        run:  coverage run -m unittest
+
+      - name: Unit Test
+        run: python -m unittest -v test
 
       - name: Run coverage
         run: py.test test.py --cov=test.py
