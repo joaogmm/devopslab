@@ -29,7 +29,7 @@ jobs:
         run:  pip install pytest-cov
 
       - name: Run coverage
-        run: py.test test.py --cov=sample.py
+        run: py.test test.py --cov=test.py
       
       - name: Install tox and any other packages
         run: pip install tox
