@@ -3,4 +3,4 @@
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=joaogmm_devopslab&metric=alert_status)](https://sonarcloud.io/dashboard?id=metamug_mason) 
 
 # DevOps Hands On
-Aplicação Simples em Python/Flask com teste usando Unittest
+Aplicação Simples em Python/Flask com teste usando Unittest.
